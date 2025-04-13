@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" style="background:transparent">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9333ea"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#3b82f6" flood-opacity="0.3"/>
+    </filter>
+    <style>
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+      }
+    </style>
+  </defs>
+
+  <!-- Oversized V Symbol -->
+  <g transform="translate(200 100)" filter="url(#shadow)">
+    <path d="M200 300L400 0L600 300L400 600Z" fill="url(#grad1)"/>
+    <path d="M300 240L400 120L500 240L400 480Z" fill="#fff"/>
+    
+    <!-- Large Security Lock -->
+    <g transform="translate(350 180) scale(2.5)">
+      <path d="M15 40H25V30H15V40ZM20 50C23.314 50 26 47.314 26 44V30H14V44C14 47.314 16.686 50 20 50Z" fill="#3b82f6"/>
+    </g>
+    
+    <!-- Bold Fashion Elements -->
+    <path d="M150 120L400 0L650 120" fill="none" stroke="#fff" stroke-width="8"/>
+    <circle cx="400" cy="150" r="12" fill="#fff"/>
+  </g>
+
+  <!-- Massive Text -->
+  <text x="700" y="300" font-family="Arial" font-size="100" fill="#1e293b" font-weight="900">
+    <tspan x="700" dy="0">VOGUE</tspan>
+    <tspan x="700" dy="120" font-size="80">VAULT</tspan>
+  </text>
+
+  <!-- Animated Decorative Elements -->
+  <g style="animation: pulse 3s infinite">
+    <circle cx="900" cy="150" r="30" fill="#9333ea"/>
+    <circle cx="980" cy="200" r="25" fill="#3b82f6"/>
+    <circle cx="1050" cy="150" r="20" fill="#9333ea"/>
+  </g>
+</svg>
