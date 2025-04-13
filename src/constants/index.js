@@ -63,7 +63,7 @@ export const myProjects = [
         subdesc: 'Developed using React for frontend, Node.js for backend, Tailwind CSS for styling, and MongoDB for database. Integrated essential e-commerce features including cart management, product filtering, and order tracking.',
         href: 'https://vogue-vault-frontend.vercel.app/', // Add your live demo/GitHub link
         texture: '/textures/project/project1.mp4',
-        logo: '/public/assets/voguevault-logo.svg',
+        logo: '/assets/voguevault-logo.svg',
         logoStyle: {
             backgroundColor: '#1A1A1A',
             border: '0.2px solid #2D2D2D',

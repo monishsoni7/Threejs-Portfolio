@@ -46,7 +46,7 @@ const About = () => {
                     <div className="grid-container h-full p-4 flex flex-col bg-gradient-to-br from-gray-900/50 to-blue-900/20">
                         <div className="flex items-center gap-2 mb-3">
                             <img 
-                                src="/public/assets/react.svg" 
+                                src="/assets/react.svg" 
                                 className="w-8 h-8 animate-pulse" 
                                 alt="React Logo" 
                             />
