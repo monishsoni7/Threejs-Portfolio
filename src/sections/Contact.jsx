@@ -2,7 +2,16 @@ import React, {useRef, useState} from 'react'
 import emailjs from '@emailjs/browser'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {useMediaQuery} from "react-responsive";
+import {calculateSizes} from "../constants/index.js";
 const Contact = () => {
+
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
+  const isSmall = useMediaQuery({ maxWidth: 440 })
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 })
+  const isDesktop = useMediaQuery({ minWidth: 1025 })
+  const sizes = calculateSizes(isSmall, isMobile, isTablet);
+
     const formRef = useRef();
     const [loading, setLoading] = useState(false);
     const [form, setForm] = useState({
@@ -62,13 +71,13 @@ alert('Something went wrong.');
 <section className="c-space my-20 relative">
   <div className="container mx-auto">
     {/* Terminal Image Background */}
-    <div className="absolute inset-0 z-0">
+   { isDesktop ? <div className="absolute inset-0 z-0">
       <img 
         src='/assets/terminal.png' 
         alt="contact background" 
         className="w-full h-full object-contain "
       />
-    </div>
+    </div> : null }
 
     {/* Contact Form Content */}
     <div className="relative z-10 w-full max-w-xl mx-auto pb-10 ">
